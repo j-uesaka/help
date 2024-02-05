@@ -10,10 +10,10 @@ import { Header } from "./ui-components";
 function App() {
   return (
     <div className="py-4">
-      <header className="mb-4">
+      <Header className="mb-4">
         <img src={logo} className="App-logo" alt="logo" />
         <p>※これはUIコンポーネントを利用した表示です。</p>
-      </header>
+      </Header>
     </div>
   );
 }
