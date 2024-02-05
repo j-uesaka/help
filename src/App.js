@@ -5,15 +5,14 @@ import '@aws-amplify/ui-react/styles.css';
 import { Amplify } from "aws-amplify";
 import { withAuthenticator } from "@aws-amplify/ui-react";
 import aws_exports from "./aws-exports";
-
-Amplify.configure(aws_exports);
+import { Header } from "./ui-components";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className="py-4">
+      <header className="mb-4">
         <img src={logo} className="App-logo" alt="logo" />
-        <h1>Hello from V2</h1>
+        <p>※これはUIコンポーネントを利用した表示です。</p>
       </header>
     </div>
   );
