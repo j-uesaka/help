@@ -32,6 +32,8 @@ export { default as NavBarHeader2 } from "./NavBarHeader2";
 export { default as NavBarSide } from "./NavBarSide";
 export { default as PersonComponent } from "./PersonComponent";
 export { default as PersonComponentCollection } from "./PersonComponentCollection";
+export { default as PersonCreateForm } from "./PersonCreateForm";
+export { default as PersonUpdateForm } from "./PersonUpdateForm";
 export { default as ProductCard } from "./ProductCard";
 export { default as ProductDetail } from "./ProductDetail";
 export { default as ProfileCard } from "./ProfileCard";

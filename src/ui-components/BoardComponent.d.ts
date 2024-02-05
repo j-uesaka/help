@@ -5,7 +5,6 @@
  **************************************************************************/
 
 import * as React from "react";
-import { Board } from "../models";
 import { ImageProps, TextProps, ViewProps } from "@aws-amplify/ui-react";
 export declare type EscapeHatchProps = {
     [elementHierarchy: string]: Record<string, unknown>;
@@ -26,7 +25,7 @@ export declare type BoardComponentOverridesProps = {
     createdAt?: PrimitiveOverrideProps<TextProps>;
 } & EscapeHatchProps;
 export declare type BoardComponentProps = React.PropsWithChildren<Partial<ViewProps> & {
-    board?: Board;
+    board?: any;
 } & {
     overrides?: BoardComponentOverridesProps | undefined | null;
 }>;

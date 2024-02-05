@@ -5,7 +5,6 @@
  **************************************************************************/
 
 import * as React from "react";
-import { Person } from "../models";
 import { TextProps, ViewProps } from "@aws-amplify/ui-react";
 export declare type EscapeHatchProps = {
     [elementHierarchy: string]: Record<string, unknown>;
@@ -26,7 +25,7 @@ export declare type PersonComponentOverridesProps = {
     tel?: PrimitiveOverrideProps<TextProps>;
 } & EscapeHatchProps;
 export declare type PersonComponentProps = React.PropsWithChildren<Partial<ViewProps> & {
-    person?: Person;
+    person?: any;
 } & {
     overrides?: PersonComponentOverridesProps | undefined | null;
 }>;
