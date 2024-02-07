@@ -23,8 +23,8 @@ export default function BoardComponentCollection(props) {
   const [instanceKey, setInstanceKey] = React.useState("newGuid");
   const [loading, setLoading] = React.useState(true);
   const [maxViewed, setMaxViewed] = React.useState(1);
-  const pageSize = 6;
-  const isPaginated = false;
+  const pageSize = 5;
+  const isPaginated = true;
   React.useEffect(() => {
     nextToken[instanceKey] = "";
     apiCache[instanceKey] = [];
@@ -81,6 +81,7 @@ export default function BoardComponentCollection(props) {
     <div>
       <Collection
         type="list"
+        searchPlaceholder="Search..."
         direction="column"
         justifyContent="left"
         itemsPerPage={pageSize}

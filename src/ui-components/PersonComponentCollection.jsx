@@ -24,7 +24,7 @@ export default function PersonComponentCollection(props) {
   const [loading, setLoading] = React.useState(true);
   const [maxViewed, setMaxViewed] = React.useState(1);
   const pageSize = 3;
-  const isPaginated = true;
+  const isPaginated = false;
   React.useEffect(() => {
     nextToken[instanceKey] = "";
     apiCache[instanceKey] = [];
